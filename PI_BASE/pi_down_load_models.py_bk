@@ -1,0 +1,197 @@
+from huggingface_hub.hub_mixin import hf_hub_download
+from torch.nn.parallel.data_parallel import data_parallel
+from modelscope import snapshot_download as ms_snapshot_download
+from modelscope.hub.constants import MODEL_ID_SEPARATOR
+from huggingface_hub import snapshot_download as hf_snapshot_download
+
+from langchain_ollama import OllamaEmbeddings, OllamaLLM
+from transformers import AutoTokenizer, AutoModelForCausalLM
+import torch
+import os
+
+# 导入PI项目日志模块
+from pi_log import *
+
+class PI_LLM:
+    def __init__(self, isLocal:bool = False):# 是否本地模型, 默认使用远程模型
+        self.isLocal = isLocal
+        self.model_id = None        # 模型ID，用于标识模型
+        self.tokenizer = None       # 本地llm的分词器
+        self.model = None           # 本地llm的模型
+        self.ollama_llm = None      # ollama llm
+        self.vllm_llm = None        # vllm llm
+
+    def download_model(self, model_tag, model_dir, model_repo=1):
+        """下载并加载模型的一站式方法"""
+        model_path = download_model_to_local(model_tag, model_dir, model_repo)
+        return self.load_model(model_path)
+
+    def load_model(self, model_id):
+        if self.isLocal:
+            self.tokenizer, self.model = load_llm_from_local(model_id)
+        else:
+            self.ollama_llm = load_llm_from_ollama(model_id)
+
+'''# 全局变量存储已加载的模型
+_LOADED_MODELS = {}'''
+
+# 获取logger实例（启用文件日志）
+logger = get_logger("PI_LLM", log_to_file=True)
+
+# 下载整个模型仓库到本地， 这里使用modelscope 的snapshot_download 方法
+# model_repo, 如果使用huggingface_hub 下载，则值为1，modelscope 下载，设置MODEL_SOURCE 为2
+def download_model_to_local(model_id, model_dir, model_repo):
+    """下载模型到本地目录"""
+    model_path = os.path.join(model_dir, model_id.replace(MODEL_ID_SEPARATOR, "/"))
+    
+    log_download_start(model_id, model_dir, logger)
+    
+    if os.path.exists(model_path):
+        log_file_exists(model_path, logger)
+        return model_path
+    else:
+        if model_repo == 2:
+            try:
+                local_dir = ms_snapshot_download(
+                    model_id = model_id,
+                    revision = "master",
+                    cache_dir = model_dir,
+                    max_workers = 4
+                )
+                log_download_complete(local_dir, logger)
+                return local_dir
+            except Exception as e:
+                log_error(f"模型下载失败: {model_id} - 错误: {str(e)}", logger)
+                raise
+        elif model_repo == 1:
+            try:
+                local_dir = hf_snapshot_download(
+                    repo_id = model_id,
+                    revision = "main",
+                    cache_dir = model_dir,
+                    max_workers = 4
+                )
+                log_download_complete(local_dir, logger)
+                return local_dir
+            except Exception as e:
+                log_error(f"模型下载失败: {model_id} - 错误: {str(e)}", logger)
+                raise
+        try:
+            local_dir = ms_snapshot_download(
+                model_id = model_id,
+                revision = "master",
+                cache_dir = model_dir,
+                max_workers = 4
+            )
+            log_download_complete(local_dir, logger)
+            return local_dir
+        except Exception as e:
+            log_error(f"模型下载失败: {model_id} - 错误: {str(e)}", logger)
+            raise
+
+# 从本地的ollama 加载 embeddings 模型
+def load_embeddings_model_from_ollama(model_id):
+    """从本地加载嵌入模型"""
+    log_info(f"📦 加载嵌入模型: {model_id}", logger)
+
+    try:
+        embeddings = OllamaEmbeddings(
+            model = model_id,
+            base_url = "http://localhost:11434"  # 默认可省略
+        )
+        log_info(f"✅ 嵌入模型加载成功: {model_id}", logger)
+        return embeddings
+    except Exception as e:
+        log_error(f"嵌入模型加载失败: {model_id} - 错误: {str(e)}", logger)
+        raise
+
+# 从本地的ollama 加载 llm 模型
+def load_llm_from_ollama(model_id):
+    """从本地加载 llm 模型"""
+    try:
+        llm = OllamaLLM(
+            model = model_id,
+            base_url = "http://localhost:11434"  # 默认可省略
+        )
+        log_info(f"✅ llm 模型加载成功: {model_id}", logger)
+        return llm
+    except Exception as e:
+        log_error(f"llm 模型加载失败: {model_id} - 错误: {str(e)}", logger)
+        raise   
+
+# 加载本地 LLM，在mac M1芯片上使用 MPS 加速
+def load_llm_from_local(model_path, use_cache=True):
+    """加载本地LLM，支持缓存避免重复加载"""
+    log_model_loading_start(model_path, logger)
+    
+    # 检查缓存
+    if use_cache and model_path in _LOADED_MODELS:
+        log_cache_hit(model_path, logger)
+        return _LOADED_MODELS[model_path]
+    else:
+        log_cache_miss(model_path, logger)
+        
+        # 设备检测
+        if torch.backends.mps.is_available():
+            device = "mps"
+            data_type = torch.float16
+        elif torch.cuda.is_available():
+            device = "cuda"
+            data_type = torch.float16
+        else:
+            device = "cpu"
+            data_type = torch.float32
+            
+        log_device_detection(device, str(data_type), logger)
+
+    # 加载分词器tokenizer 和模型 model
+    try:
+        # 加载 tokenizer
+        log_info(f"🔤 加载分词器: {model_path}", logger)
+        tokenizer = AutoTokenizer.from_pretrained(
+            model_path, 
+            trust_remote_code=True
+        )
+
+        # 加载模型
+        log_info(f"🤖 加载模型: {model_path}", logger)
+        model = AutoModelForCausalLM.from_pretrained(
+            model_path,
+            device_map = device, # "auto"
+            trust_remote_code = True,
+            dtype = data_type,
+        )
+
+        # 缓存分词器和模型（tokenizer, model）
+        if use_cache:
+            _LOADED_MODELS[model_path] = (tokenizer, model)
+            log_cache_store(model_path, logger)
+
+        log_model_loading_success(model_path, device, logger)
+
+        # 返回 tokenizer 和 model
+        return tokenizer, model
+        
+    except Exception as e:
+        log_model_loading_failed(model_path, str(e), logger)
+        raise
+
+if __name__ == "__main__":
+    MODEL_REPO = 2
+    MODEL_DIR = "/Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms"
+    LLM_MODEL_TAG = "Qwen/Qwen3-0.6B"
+    EMBEDDING_MODEL_OLLAMA_TAG = "bge-m3"
+    LLM_MODEL_OLLAMA_TAG = "qwen3:8b"
+    
+    # local_model_dir = download_model_to_local(LLM_MODEL_TAG, MODEL_DIR, MODEL_REPO)
+
+    load_embeddings_model_from_ollama(EMBEDDING_MODEL_OLLAMA_TAG)
+    '''
+    load_llm_from_ollama(LLM_MODEL_OLLAMA_TAG)
+    load_llm_from_local(local_dir, use_cache=False)
+    '''
+    llm = PI_LLM(isLocal=True)
+    local_model_dir = llm.download_model(LLM_MODEL_TAG, MODEL_DIR, MODEL_REPO)
+    llm.load_model(local_model_dir)
+    print(llm.tokenizer, llm.model)
+    

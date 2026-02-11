@@ -1,0 +1,32 @@
+2026-02-07 23:43:50 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-07 23:43:50 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-1.7B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-07 23:43:50 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-1.7B
+2026-02-07 23:43:50 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-1.7B
+2026-02-07 23:43:50 - PI_LLM - INFO - 🔍 缓存未命中，开始加载新模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-1.7B
+2026-02-07 23:43:50 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-07 23:43:50 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-1.7B
+2026-02-07 23:43:50 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-1.7B
+2026-02-07 23:44:00 - PI_LLM - INFO - 💾 模型已缓存: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-1.7B
+2026-02-07 23:44:00 - PI_LLM - INFO - ✅ 模型加载成功: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-1.7B (设备: mps)
+2026-02-07 23:44:00 - PI_LLM - INFO - 🧪 开始LLM模型功能测试
+2026-02-07 23:44:28 - PI_LLM - INFO - 💬 模型回答: <think>
+好的，用户问“嗨！我是谁？”，我需要先理解他的意图。他可能是在测试我的反应，或者想了解我的身份。作为AI助手，我应该明确回答自己的身份，同时保持友好和专业。
+
+首先，我需要确认用户的问题是否在问我的身份，还是有其他意图。用户可能想确认我的存在，或者想知道我的功能。这时候，我应该简明扼要地介绍自己，说明我是谁，以及我可以提供什么帮助。
+
+接下来，我需要确保回答符合规范，不涉及敏感内容，同时保持自然的口语化表达。避免使用过于技术化的术语，让用户容易理解。比如，可以说“我是你的AI助手，帮助你解答问题、提供信息和协助完成任务。”
+
+另外，用户可能希望得到互动，所以可以邀请他提出问题，促进对话的延续。例如，“有什么我可以帮你的吗？”
+
+还要注意语气友好，保持亲切感，让用户感到舒适。避免过于生硬或机械的回答，这样可能会让用户感到不自在。
+
+最后，检查是否有需要补充的信息，比如我的功能范围、使用场景等，但不要过于冗长。保持简洁明了，确保用户能快速理解。
+</think>
+
+嗨！我是你的AI助手，
+2026-02-07 23:44:28 - PI_LLM - INFO - ✅ LLM模型功能测试完成
+2026-02-09 13:13:44 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 13:13:44 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 13:15:00 - PI_LLM - INFO - ✅ 模型下载完成，保存位置: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0___6B
+2026-02-09 13:20:01 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 13:20:01 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms

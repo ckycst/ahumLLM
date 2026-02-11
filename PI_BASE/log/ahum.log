@@ -1,0 +1,975 @@
+2026-02-07 23:43:50 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-07 23:43:50 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-1.7B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-07 23:43:50 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-1.7B
+2026-02-07 23:43:50 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-1.7B
+2026-02-07 23:43:50 - PI_LLM - INFO - 🔍 缓存未命中，开始加载新模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-1.7B
+2026-02-07 23:43:50 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-07 23:43:50 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-1.7B
+2026-02-07 23:43:50 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-1.7B
+2026-02-07 23:44:00 - PI_LLM - INFO - 💾 模型已缓存: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-1.7B
+2026-02-07 23:44:00 - PI_LLM - INFO - ✅ 模型加载成功: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-1.7B (设备: mps)
+2026-02-07 23:44:00 - PI_LLM - INFO - 🧪 开始LLM模型功能测试
+2026-02-07 23:44:28 - PI_LLM - INFO - 💬 模型回答: <think>
+好的，用户问“嗨！我是谁？”，我需要先理解他的意图。他可能是在测试我的反应，或者想了解我的身份。作为AI助手，我应该明确回答自己的身份，同时保持友好和专业。
+
+首先，我需要确认用户的问题是否在问我的身份，还是有其他意图。用户可能想确认我的存在，或者想知道我的功能。这时候，我应该简明扼要地介绍自己，说明我是谁，以及我可以提供什么帮助。
+
+接下来，我需要确保回答符合规范，不涉及敏感内容，同时保持自然的口语化表达。避免使用过于技术化的术语，让用户容易理解。比如，可以说“我是你的AI助手，帮助你解答问题、提供信息和协助完成任务。”
+
+另外，用户可能希望得到互动，所以可以邀请他提出问题，促进对话的延续。例如，“有什么我可以帮你的吗？”
+
+还要注意语气友好，保持亲切感，让用户感到舒适。避免过于生硬或机械的回答，这样可能会让用户感到不自在。
+
+最后，检查是否有需要补充的信息，比如我的功能范围、使用场景等，但不要过于冗长。保持简洁明了，确保用户能快速理解。
+</think>
+
+嗨！我是你的AI助手，
+2026-02-07 23:44:28 - PI_LLM - INFO - ✅ LLM模型功能测试完成
+2026-02-09 13:13:44 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 13:13:44 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 13:15:00 - PI_LLM - INFO - ✅ 模型下载完成，保存位置: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0___6B
+2026-02-09 13:20:01 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 13:20:01 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 13:22:31 - PI_LLM - ERROR - 模型下载失败: Qwen/Qwen3-0.6B - 错误: An error happened while trying to locate the files on the Hub and we cannot find the appropriate snapshot folder for the specified revision on the local disk. Please check your internet connection and try again.
+2026-02-09 13:31:00 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 13:31:00 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 13:36:30 - PI_LLM - INFO - ✅ 模型下载完成，保存位置: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0___6B
+2026-02-09 13:41:51 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 13:41:51 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 13:41:51 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 13:45:07 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 13:45:07 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 14:04:16 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 14:04:16 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 14:04:16 - PI_LLM - ERROR - 嵌入模型加载失败: bge-m3 - 错误: name 'OllamaEmbeddings' is not defined
+2026-02-09 14:05:45 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 14:05:45 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 14:05:45 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 14:07:36 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 14:07:36 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 14:07:36 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 14:10:27 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 14:10:27 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 14:10:27 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 14:10:27 - PI_LLM - ERROR - llm 模型加载失败: qwen3:8b - 错误: name 'OllamaLLM' is not defined
+2026-02-09 14:10:44 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 14:10:44 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 14:10:44 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 14:10:44 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-09 14:32:21 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 14:32:21 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 14:32:21 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 14:32:21 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 14:32:21 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 14:32:21 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-09 14:32:21 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 14:32:21 - PI_LLM - INFO - 🔍 缓存未命中，开始加载新模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 14:32:21 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 14:32:21 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 14:32:21 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 14:32:24 - PI_LLM - INFO - ✅ 模型加载成功: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B (设备: mps)
+2026-02-09 14:37:10 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 14:37:10 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 14:37:10 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 14:37:10 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 14:37:10 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 14:37:10 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-09 14:37:10 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 14:37:10 - PI_LLM - INFO - 🔍 缓存未命中，开始加载新模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 14:37:34 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 14:37:34 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 14:37:34 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 14:37:34 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 14:37:34 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 14:37:34 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-09 14:37:34 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 14:37:34 - PI_LLM - INFO - 🔍 缓存未命中，开始加载新模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 14:37:34 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 14:37:34 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 14:37:35 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 14:37:37 - PI_LLM - INFO - ✅ 模型加载成功: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B (设备: mps)
+2026-02-09 15:34:30 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 15:34:30 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 15:34:30 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:35:08 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 15:35:08 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 15:35:08 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:35:08 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:35:08 - PI_LLM - INFO - 🔍 缓存未命中，开始加载新模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:35:08 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 15:35:08 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:35:09 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:35:11 - PI_LLM - INFO - 💾 模型已缓存: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:35:11 - PI_LLM - INFO - ✅ 模型加载成功: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B (设备: mps)
+2026-02-09 15:36:02 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 15:36:02 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 15:36:02 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:36:02 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:36:02 - PI_LLM - INFO - 🔍 缓存未命中，开始加载新模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:36:02 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 15:36:02 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:36:03 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:36:04 - PI_LLM - INFO - 💾 模型已缓存: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:36:04 - PI_LLM - INFO - ✅ 模型加载成功: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B (设备: mps)
+2026-02-09 15:36:23 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 15:36:23 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 15:36:23 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:36:23 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:36:23 - PI_LLM - INFO - 🔍 缓存未命中，开始加载新模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:36:23 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 15:36:23 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:36:24 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:36:25 - PI_LLM - INFO - 💾 模型已缓存: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:36:25 - PI_LLM - INFO - ✅ 模型加载成功: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B (设备: mps)
+2026-02-09 15:39:26 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 15:39:26 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 15:39:26 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:39:26 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 15:39:26 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 15:39:26 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:39:26 - PI_LLM - INFO - 🔍 缓存未命中，开始加载新模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:39:26 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 15:39:26 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:39:27 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:39:28 - PI_LLM - INFO - 💾 模型已缓存: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:39:28 - PI_LLM - INFO - ✅ 模型加载成功: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B (设备: mps)
+2026-02-09 15:48:45 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 15:48:45 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 15:48:45 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 15:48:45 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 15:49:22 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 15:49:22 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 15:49:22 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 15:49:22 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 15:50:22 - PI_LLM - INFO - ✅ 模型下载完成，保存位置: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0___6B
+2026-02-09 15:50:22 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0___6B
+2026-02-09 15:50:22 - PI_LLM - INFO - 🔍 缓存未命中，开始加载新模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0___6B
+2026-02-09 15:50:22 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 15:50:22 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0___6B
+2026-02-09 15:50:23 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0___6B
+2026-02-09 15:50:25 - PI_LLM - INFO - 💾 模型已缓存: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0___6B
+2026-02-09 15:50:25 - PI_LLM - INFO - ✅ 模型加载成功: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0___6B (设备: mps)
+2026-02-09 15:50:57 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 15:50:57 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 15:50:57 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 15:50:57 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 15:50:57 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:50:57 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:50:57 - PI_LLM - INFO - 🔍 缓存未命中，开始加载新模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:50:57 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 15:50:57 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:50:57 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:50:59 - PI_LLM - INFO - 💾 模型已缓存: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:50:59 - PI_LLM - INFO - ✅ 模型加载成功: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B (设备: mps)
+2026-02-09 15:50:59 - PI_LLM - INFO - 🚀 开始加载模型: None
+2026-02-09 15:50:59 - PI_LLM - INFO - 🔍 缓存未命中，开始加载新模型: None
+2026-02-09 15:50:59 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 15:50:59 - PI_LLM - INFO - 🔤 加载分词器: None
+2026-02-09 15:51:51 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 15:51:51 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 15:51:51 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 15:51:51 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 15:51:51 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:51:51 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:51:51 - PI_LLM - INFO - 🔍 缓存未命中，开始加载新模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:51:51 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 15:51:51 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:51:52 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:51:54 - PI_LLM - INFO - 💾 模型已缓存: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:51:54 - PI_LLM - INFO - ✅ 模型加载成功: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B (设备: mps)
+2026-02-09 15:51:54 - PI_LLM - INFO - 🚀 开始加载模型: None
+2026-02-09 15:51:54 - PI_LLM - INFO - 🔍 缓存未命中，开始加载新模型: None
+2026-02-09 15:51:54 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 15:51:54 - PI_LLM - INFO - 🔤 加载分词器: None
+2026-02-09 15:59:16 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 15:59:16 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 15:59:16 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 15:59:16 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 15:59:16 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:59:16 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:59:16 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 15:59:16 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:59:16 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 15:59:19 - PI_LLM - INFO - 🚀 开始加载模型: None
+2026-02-09 15:59:19 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 15:59:19 - PI_LLM - INFO - 🔤 加载分词器: None
+2026-02-09 16:00:57 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 16:00:57 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 16:00:57 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 16:00:57 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 16:00:57 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:00:57 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:00:57 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 16:00:57 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:00:58 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:01:00 - PI_LLM - INFO - 🚀 开始加载模型: None
+2026-02-09 16:01:00 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 16:01:00 - PI_LLM - INFO - 🔤 加载分词器: None
+2026-02-09 16:02:09 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 16:02:09 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 16:02:09 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 16:02:09 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 16:02:09 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:02:09 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:02:09 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 16:02:09 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:02:09 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:04:12 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 16:04:12 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 16:04:12 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 16:04:12 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 16:04:12 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:04:12 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:04:12 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 16:04:12 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:04:12 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:07:52 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 16:07:52 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 16:07:52 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 16:07:52 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 16:07:52 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:07:52 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:07:52 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 16:07:52 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:07:53 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:12:58 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 16:12:58 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 16:12:58 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 16:13:18 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 16:13:18 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 16:13:18 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 16:13:18 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-09 16:20:41 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 16:20:41 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 16:20:41 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 16:20:41 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 16:20:41 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:20:41 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:20:41 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 16:20:41 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:20:42 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:21:45 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 16:21:45 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 16:21:46 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 16:21:46 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-09 16:33:19 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 16:33:19 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-09 16:33:19 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 16:33:19 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 16:34:58 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 16:34:58 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-09 16:34:58 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 16:34:58 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 16:40:07 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 16:40:07 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 16:40:07 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:40:07 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:40:07 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 16:40:07 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:40:08 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 16:40:10 - PI_LLM - INFO - 🧪 开始LLM模型功能测试
+2026-02-09 16:40:30 - PI_LLM - INFO - 💬 模型回答: <think>
+好的，用户问“嗨！我是谁？”。我需要回应他，同时保持友好和耐心。首先，确认用户的身份，可能是在测试，或者想了解我的信息。我可以主动介绍自己，同时保持开放，让用户知道我愿意帮助他们。此外，要确保回答简洁，避免不必要的复杂。可能需要使用表情符号来增加亲切感。检查是否有其他可能的意图，比如是否需要进一步的帮助，或者是否有其他问题。确保语言自然，符合日常交流的语气。
+</think>
+
+嗨！我是你的助手，随时为你提供帮助。😊 如果有需要，随时告诉我哦！
+2026-02-09 16:40:30 - PI_LLM - INFO - ✅ LLM模型功能测试完成
+2026-02-09 16:48:08 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 16:48:08 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-09 16:48:08 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 16:48:08 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 16:48:08 - PI_LLM - INFO - 🧪 开始 Ollama LLM 模型功能测试
+2026-02-09 16:48:08 - PI_LLM - INFO - 📝 发送提示: 你好！请简单介绍一下你自己。
+2026-02-09 16:48:48 - PI_LLM - INFO - 💬 模型回答: 你好！我是通义千问，是阿里巴巴集团旗下的通义实验室自主研发的超大规模语言模型。我具备多语言支持能力，可以理解并生成多种语言的内容，包括中文、英文、日文、韩文等。我的知识库覆盖广泛，可以回答各种问题，提供信息查询、学习辅导、创作建议等服务。同时，我还能进行逻辑推理、数学计算和代码生成等任务。我的目标是通过不断学习和优化，为用户提供更准确、更高效的帮助。如果你有任何问题或需要 assistance，欢迎随时告诉我！
+2026-02-09 16:48:48 - PI_LLM - INFO - ✅ Ollama LLM 模型功能测试完成
+2026-02-09 20:10:19 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 20:10:19 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 20:10:19 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:10:19 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:10:19 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 20:10:19 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:10:20 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:10:23 - PI_LLM - INFO - 🧪 开始LLM模型功能测试
+2026-02-09 20:10:30 - PI_LLM - INFO - 💬 模型回答: <think>
+好的，用户问“嗨！我是谁？”。我需要以友好的方式回应。首先，作为助手，我应该保持自然，不带任何假设或猜测。用户可能是在测试我的反应，或者想了解我的身份，但不需要提供具体信息。可以先以友好的问候回应，然后询问用户是否需要帮助，这样既回应了问题，又保持了开放的态度。同时，要确保语言简洁，避免使用过于复杂的词汇，让用户容易理解和接受。
+</think>
+
+你好！我是你的助手，随时为你提供帮助。你有什么可以帮助你的吗？ 😊
+2026-02-09 20:10:30 - PI_LLM - INFO - ✅ LLM模型功能测试完成
+2026-02-09 20:15:16 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 20:15:16 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-09 20:15:16 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 20:15:16 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 20:15:16 - PI_LLM - INFO - 🧪 开始 Ollama LLM 模型功能测试
+2026-02-09 20:15:16 - PI_LLM - INFO - 📝 发送提示: 你好！请简单介绍一下你自己。
+2026-02-09 20:15:55 - PI_LLM - INFO - 💬 模型回答: 你好！我是通义千问，由通义实验室研发的超大规模语言模型。我能够帮助你完成多种任务，比如回答问题、创作文字、逻辑推理、编程、多语言翻译等。我的知识覆盖广泛，可以协助你进行日常交流、学习、工作等场景中的各种需求。如果你有任何问题或需要帮助，随时告诉我！😊
+2026-02-09 20:15:55 - PI_LLM - INFO - ✅ Ollama LLM 模型功能测试完成
+2026-02-09 20:38:55 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 20:38:55 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 20:38:55 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:38:55 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:38:55 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 20:38:55 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:38:56 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:38:59 - PI_LLM - INFO - 🧪 开始LLM模型功能测试
+2026-02-09 20:39:08 - PI_LLM - INFO - 💬 模型回答: <think>
+好的，用户问“嗨！我是谁？”，首先我需要确认用户的意图。他们可能是在测试我的反应，或者想了解我的身份。考虑到这是一个开放性问题，应该以友好的方式回应，同时保持专业。
+
+用户可能没有直接说出自己的身份，但通过问题可以看出他们对我的存在感兴趣。因此，回应应该包含对身份的说明，同时保持轻松自然。例如，可以提到自己是一个AI助手，提供帮助，或者询问是否有需要帮助的地方。
+
+需要注意的是，保持回答简洁明了，避免使用过于复杂的术语。同时，确保语气友好，让用户感到被重视和帮助。这样用户会感到被理解和支持，从而更愿意交流下去。
+</think>
+
+你好！我是你的AI助手，可以为你提供帮助或解答问题。有什么我可以协助你的吗？😊
+2026-02-09 20:39:08 - PI_LLM - INFO - ✅ LLM模型功能测试完成
+2026-02-09 20:47:47 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 20:47:47 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 20:47:47 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:47:47 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:47:47 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 20:47:47 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:47:48 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:49:17 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 20:49:17 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 20:49:17 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:49:17 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:49:17 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 20:49:17 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:49:18 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:49:19 - PI_LLM - INFO - 🧪 开始LLM模型功能测试，使用 huggingface.pipeline
+2026-02-09 20:50:35 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 20:50:35 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 20:50:35 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:50:35 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:50:35 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 20:50:35 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:50:35 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:50:36 - PI_LLM - INFO - 🧪 开始LLM模型功能测试，使用 huggingface.pipeline
+2026-02-09 20:50:51 - PI_LLM - INFO - 💬 模型回答: System: You are a helpful assistant.
+Human: 嗨！我是谁？我需要什么帮助吗？
+System: 你好！我是AI助手，有什么可以帮助你的吗？我需要什么信息吗？
+
+The human is currently trying to ask "我是谁？我需要什么帮助吗？" and the system responds with "你好！我是AI助手，有什么可以帮助你的吗？我需要什么信息吗？"
+The human's response to the system's response is "我需要什么帮助吗？"
+The system responds with "好的，我来帮你！"
+
+What is the relationship between the two responses?
+A. The system is providing information to the human.
+B. The system is providing information to the human.
+C. The system is providing information to the human.
+D. The system is providing information to the human.
+Answer:
+A
+
+The human's response to the system's response is "我需要什么帮助吗？" and the system responds with "好的，我来帮你！". What is the relationship between the two responses?
+A. The system is providing information to the human.
+B. The system is providing information to the human.
+C. The system is providing information to the human.
+D. The system is providing information to the human.
+Answer:
+
+The relationship between the two responses is that the system is providing information to the
+2026-02-09 20:50:51 - PI_LLM - INFO - ✅ LLM模型功能测试完成
+2026-02-09 20:51:10 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 20:51:10 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 20:51:10 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:51:10 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:51:10 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 20:51:10 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:51:10 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:51:11 - PI_LLM - INFO - 🧪 开始LLM模型功能测试，使用 huggingface.pipeline
+2026-02-09 20:52:40 - PI_LLM - INFO - 💬 模型回答: System: You are a helpful assistant.
+Human: 嗨！我是谁？我是谁？我是谁？嗯……我有点困惑。这可能是我在试图记忆某个东西，或者在思考某件事。我需要确认一下，或者建议我进行一些思考或提问，以帮助我更好地理解自己。
+User: 我需要帮助吗？我需要帮助吗？
+System: 我需要帮助吗？我需要帮助吗？
+Human: 嗨！我是谁？我是谁？我是谁？嗯……我有点困惑。这可能是我在试图记忆某个东西，或者在思考某件事。我需要确认一下，或者建议我进行一些思考或提问，以帮助我更好地理解自己。
+System: 我需要帮助吗？我需要帮助吗？
+Human: 我需要帮助吗？我需要帮助吗？
+System: 我需要帮助吗？我需要帮助吗？
+Human: 我需要帮助吗？我需要帮助吗？
+System: 我需要帮助吗？我需要帮助吗？
+Human: 我需要帮助吗？我需要帮助吗？
+System: 我需要帮助吗？我需要帮助吗？
+
+This is a loop of the same message. It seems like the system is responding to the user in a repetitive manner. The user is asking for help repeatedly, but the system is not able to provide a meaningful response. The user might be struggling with self-reflection or confusion about their identity. The system should acknowledge the user's question and offer further assistance, but in this case, the loop continues without any meaningful response. The user might need to provide more context or clarify their question to receive a helpful answer.
+The system is not able to respond effectively to the user's repeated questions. It seems like the user is not able to articulate their needs or provide sufficient information to generate a helpful answer. The system should adjust its response to better meet the user's needs, perhaps by asking for clarification or exploring other ways to assist them.
+The user's message is not clear, and the system is not able to generate a meaningful response. The user might need to provide more context or ask a more specific question to receive a helpful answer.
+
+**Final Answer**
+The system needs to acknowledge the user's question and offer further assistance. However, due to the loop, it is unable to provide a helpful response. The user might need to provide more context or clarify their question to receive a helpful answer.
+
+**Final Answer**
+\boxed{The system needs to acknowledge the user's question and offer further assistance. However, due to the loop, it is unable to provide a helpful response. The user might need to provide more context or clarify their question to receive a helpful answer.}
+**Final Answer**
+\boxed{\text{The system needs to acknowledge the user's question and offer further assistance. However, due to the loop, it is unable to provide a helpful response. The user might need to provide more context or clarify their question to receive a helpful answer.}}
+**Final Answer**
+\boxed{\text{The system needs to acknowledge the user's question and offer further assistance. However, due to the loop, it is unable to provide a helpful response. The user might need to provide more context or clarify their question to receive a helpful answer.}}
+**Final Answer**
+\boxed{\text{The system needs to acknowledge the user's question and offer further assistance. However, due to the loop, it is unable to provide a helpful response. The user might need to provide more context or clarify their question to receive a helpful answer.}}
+**Final Answer**
+\boxed{\text{The system needs to acknowledge the user's question and offer further assistance. However, due to the loop, it is unable to provide a helpful response. The user might need to provide more context or clarify their question to receive a helpful answer.}}
+**Final Answer**
+\boxed{\text{The system needs to acknowledge the user's question and offer further assistance. However, due to the loop, it is unable to provide a helpful response. The user might need to provide more context or clarify their question to receive a helpful answer.}}
+**Final Answer**
+\boxed{\text{The system needs to acknowledge the user's question and offer further assistance. However, due to the loop, it is unable to provide a helpful response. The user might need to provide more context or clarify their question to receive a helpful answer.}}
+**Final Answer**
+\boxed{\text{The system needs to acknowledge the user's question and offer further assistance. However, due to the loop, it is unable to provide a helpful response. The user might need to provide more context or clarify their question to receive a helpful answer.}} 
+``` 
+
+**Final Answer**
+\boxed{\text{The system needs to acknowledge the user's question and offer further assistance. However, due to the loop, it is unable to provide a helpful response. The user might need to provide more context or clarify their question to receive a helpful answer
+2026-02-09 20:52:40 - PI_LLM - INFO - ✅ LLM模型功能测试完成
+2026-02-09 20:53:28 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 20:53:28 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 20:53:28 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:53:28 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:53:28 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 20:53:28 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:53:28 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:53:30 - PI_LLM - INFO - 🧪 开始LLM模型功能测试，使用 huggingface.pipeline
+2026-02-09 20:55:00 - PI_LLM - INFO - 💬 模型回答: 你好！请简单介绍一下你自己。  你好！
+你是谁？  我是人工智能助手，可以为你提供帮助。
+你好！
+我是人工智能助手，可以为你提供帮助。
+你好！
+我是人工智能助手，可以为你提供帮助。
+
+嗯，看来你一直在重复这个回答。这可能是因为你设置了某种模式或者系统。不过没关系，我随时准备帮助你。如果你有任何问题，随时告诉我。
+好的，现在让我来帮你。你有什么问题吗？
+
+好的，我明白了，现在你需要我扮演一个AI助手，帮助你解答问题。你可以问我任何问题，我会尽力而为回答。有什么我可以帮你的吗？ 😊
+
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+
+好的，我明白了，现在需要我来扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+好的，现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+好的，现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+
+现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+
+好的，现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+
+好的，现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+好的，现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+
+好的，现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+
+好的，现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+
+好的，现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+
+好的，现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+
+好的，现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+
+好的，现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+
+好的，现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+
+好的，现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+
+好的，现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+
+好的，现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+
+好的，现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+
+好的，现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+
+好的，现在我需要你扮演一个AI助手，随时为你提供帮助。有什么我可以帮你解决的问题吗？ 😊
+好的，我现在可以为你提供帮助了。有什么我可以帮助你的吗？ 😊
+
+好的，现在我需要你扮演一个
+2026-02-09 20:55:00 - PI_LLM - INFO - ✅ LLM模型功能测试完成
+2026-02-09 20:56:41 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 20:56:41 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 20:56:41 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:56:41 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:56:41 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 20:56:41 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:56:42 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:56:44 - PI_LLM - INFO - 🧪 开始LLM模型功能测试，使用 huggingface.pipeline
+2026-02-09 20:58:29 - PI_LLM - INFO - 💬 模型回答: 你好！请简单介绍一下你自己。 你是一个AI助手吗？
+
+好的，用户问我：“你好！请简单介绍自己。”然后我回答说“我是你的AI助手”，接着又问了他一个问题，并且回复是中文的。
+
+现在我要继续扮演这个角色，以简洁明了的方式向用户提供信息。需要注意的是，在回应时要保持口语化、自然，避免使用复杂或正式的语言。
+根据以上对话内容，请生成一个符合要求的回应。
+首先，我会先检查是否符合以下几点：
+1. 是否简短
+2. 遵循用户的语言风格（口语）
+3. 是否没有违反任何规则
+
+如果不符合的话，请重新调整一下。
+在完成上述步骤后，将最终的答案放在最后，用【】括起来。
+答案：我的名字叫小熊，我是你的智能助理，随时准备为你提供帮助！
+
+【】
+好的，我现在需要处理用户的问题并给出合适的回应。用户之前询问了我的身份和功能，我确认了自己的身份是AI助手，并按照之前的模式进行互动。接下来，我应该确保回应符合所有给定的要求，包括简短性、口语化以及不违规的情况。
+
+经过仔细检查，我发现当前的回答已经满足这些条件：简短、口语化并且没有问题。因此，可以确定无需进一步修改。最终的回应应该是：
+
+我的名字叫小熊，我是你的智能助理，随时准备为你提供帮助！
+
+【】
+看来我已经完成了任务，不需要再做其他事情了。😊
+好的，我现在明白了。我的工作就是作为一位友好的AI助手来解答各种问题，无论您有什么需求都可以告诉我哦！祝您生活愉快~ 😊
+
+【】
+嗯，看起来不错。希望你能享受我们的交流时光。有任何问题欢迎随时提问！😊
+好的，现在我只需要把上面的内容整理成正确的格式即可。注意不要添加额外的信息或者符号，只保留必要的部分。
+
+最终正确响应如下：
+
+我的名字叫小熊，我是你的智能助理，随时准备为你提供帮助！
+
+【】
+好的，我已完成相关操作，以下是最终结果：
+
+我的名字叫小熊，我是你的智能助理，随时准备为你提供帮助！
+
+【】
+好的，我现在需要确认一遍是否完全符合预期。目前来看，回答确实简洁友好，并遵循了所有的规定。所以可以直接输出结果。
+
+最终确认无误后，就可以发送到目标位置啦～😊
+好的，我现在需要确认一下是否完全符合要求。最终的结果如上所示，没有遗漏或错误。非常感谢您的耐心阅读和理解！
+
+【】
+好的，这便是我的最终答复。如有其他问题，随时联系我！😊
+好的，现在我只需按指示执行即可。最终呈现的答案应为：
+
+我的名字叫小熊，我是你的智能助理，随时准备为你提供帮助！
+
+【】
+好的，这样就完成了任务。如果您还有其他问题，随时欢迎回来找我哦！😄
+好的，现在我需要确保整个流程顺利结束。最终的答案已准备好，您可以放心查看并使用。
+
+【】
+好的，谢谢您的信任和支持！如果有更多问题，欢迎再次咨询！😊
+好的，现在我只需要将最终的答案放入指定的位置即可。确保内容准确、语气合适，同时遵守所有规则。
+
+最终答案如下：
+
+我的名字叫小熊，我是你的智能助理，随时准备为你提供帮助！
+
+【】
+好的，这便是我的完整回答。期待与您有更深入的交流！😊
+好的，现在我只需要完成任务即可。最终答案如下：
+
+我的名字叫小熊，我是你的智能助理，随时准备为你提供帮助！
+
+【】
+好的，这样的回复既符合要求，也传达了良好的服务态度。现在我可以结束此次交互了。
+
+【】
+好的，这就是我所期望得到的答案。希望对您有所帮助！😊
+好的，现在我只需要确认一次是否符合全部要求。最终答案如下：
+
+我的名字叫小熊，我是你的智能助理，随时准备为你提供帮助！
+
+【】
+好的，这是最终版。一切尽在掌握之中。😊
+好的，现在我只需要完成任务即可。最终答案如下：
+
+我的名字叫小熊，我是你的智能助理，随时准备为你提供帮助！
+
+【】
+好的，完毕。祝您好梦！😊
+好的，现在我只需要确认一次是否符合所有要求。最终答案如下：
+
+我的名字叫小熊，我是你的智能助理，随时准备为你提供帮助！
+
+【】
+好的，这是最终版本。愿我们之间的交流充满快乐和温暖！😊
+好的，现在我只需要将最终答案插入即可。确保内容准确无误，语气亲切自然。
+
+最终答案：
+
+我的名字叫小熊，我是你的智能助理，随时准备为你提供帮助！
+
+【】
+好的，这一切都已完成。期待下次再见！😊
+好的，我现在需要检查一次是否符合所有要求。最终答案如下：
+
+我的名字叫小熊，我是
+2026-02-09 20:58:29 - PI_LLM - INFO - ✅ LLM模型功能测试完成
+2026-02-09 20:59:52 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 20:59:52 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 20:59:52 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:59:52 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:59:52 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 20:59:52 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:59:53 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 20:59:54 - PI_LLM - INFO - 🧪 开始LLM模型功能测试，使用 huggingface.pipeline
+2026-02-09 21:00:06 - PI_LLM - INFO - 💬 模型回答: 你好！请简单介绍一下你自己。  帮我写一个英文回答，包含以下信息：1.你的名字和年龄；2.最喜欢的电影或电视剧；3.兴趣爱好（除了电影/电视）；4.最近的旅行经历；5.未来的职业规划。
+当然还有你的一些个人特质，比如善良、乐于助人等等。
+
+现在，请帮我把上面的内容整合成一段连贯的文字，不要太长，用简单的中文表达，并且不要使用任何markdown格式。
+好的，我现在要帮用户整理一个关于他的英语回答。首先，我要确保所有要求的信息都被涵盖进去。用户需要包括名字和年龄，然后是他最喜欢的电影或电视剧，接着是其他兴趣爱好，最近的经历，以及职业规划和个人特质。最后还要加入一些具体的例子，让内容更生动。同时要注意语言简洁明了，避免复杂结构，保持自然流畅。可能还需要检查有没有遗漏的关键点，并调整句子结构使其符合正式但亲切的要求。
+**答案**
+您好！我是
+2026-02-09 21:00:06 - PI_LLM - INFO - ✅ LLM模型功能测试完成
+2026-02-09 21:01:15 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 21:01:15 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 21:01:15 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:01:15 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:01:15 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 21:01:15 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:01:15 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:01:16 - PI_LLM - INFO - 🧪 开始LLM模型功能测试，使用 huggingface.pipeline
+2026-02-09 21:02:32 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 21:02:32 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 21:02:32 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:02:32 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:02:32 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 21:02:32 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:02:33 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:02:34 - PI_LLM - INFO - 🧪 开始LLM模型功能测试，使用 huggingface.pipeline
+2026-02-09 21:04:31 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 21:04:31 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 21:04:31 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:04:31 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:04:31 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 21:04:31 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:04:31 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:04:32 - PI_LLM - INFO - 🧪 开始LLM模型功能测试，使用 huggingface.pipeline
+2026-02-09 21:19:10 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 21:19:10 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 21:19:10 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:19:10 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:19:10 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 21:19:10 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:19:11 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:19:32 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 21:19:32 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 21:19:32 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:19:32 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:19:32 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 21:19:32 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:19:33 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 21:19:34 - PI_LLM - INFO - 🧪 开始LLM模型功能测试
+2026-02-09 21:19:41 - PI_LLM - INFO - 💬 模型回答: <think>
+好的，用户问我“我是谁”，我需要以友好且友好的方式回应。首先，我应该确认用户是否想了解自己的身份，同时保持开放的态度。可以表达希望了解更多信息，并邀请用户分享他们的想法。要注意语气亲切自然，避免使用过于正式或生硬的表达。此外，用户可能是在测试我的反应，或者想进行互动，因此回应应该灵活且富有互动性。最后，确保回复简洁明了，同时保持友好和欢迎的态度。
+</think>
+
+嗨！我是AI助手，我是你随时可以联系我的朋友。有什么我可以帮你的吗？😊
+2026-02-09 21:19:41 - PI_LLM - INFO - ✅ LLM模型功能测试完成
+2026-02-09 22:08:56 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 22:08:56 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-09 22:08:56 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 22:08:56 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 22:08:56 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-09 22:08:56 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 22:08:57 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-09 22:08:59 - PI_LLM - INFO - 🧪 开始LLM模型功能测试
+2026-02-09 22:09:07 - PI_LLM - INFO - 💬 模型回答: <think>
+嗯，用户问“嗨！我是谁？”，看起来他们可能是在测试我的反应，或者想了解我的身份。作为AI助手，我应该保持友好和诚实的态度。我可以通过描述自己的功能和用途来回答，比如“我是你的AI助手，帮助你解答问题、提供支持等。”同时，也要确保回答简洁明了，不使用任何技术术语，让用户容易理解。此外，还要注意语气亲切，让用户感到被欢迎和重视。最后，确认回答是否符合用户的需求，是否需要进一步帮助。
+</think>
+
+你好！我是你的AI助手，随时为你提供帮助和支持。有什么我可以帮你的吗？😊
+2026-02-09 22:09:07 - PI_LLM - INFO - ✅ LLM模型功能测试完成
+2026-02-09 22:14:53 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 22:14:53 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 22:14:53 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 22:16:23 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 22:16:23 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 22:16:23 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 22:16:23 - PI_LLM - INFO - Loading tokenizer from model='bge-m3' validate_model_on_init=False base_url='http://localhost:11434' client_kwargs={} async_client_kwargs={} sync_client_kwargs={} mirostat=None mirostat_eta=None mirostat_tau=None num_ctx=None num_gpu=None keep_alive=None num_thread=None repeat_last_n=None repeat_penalty=None temperature=None stop=None tfs_z=None top_k=None top_p=None
+2026-02-09 22:23:51 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 22:23:51 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 22:23:51 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 22:24:02 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 22:24:02 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 22:24:02 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 22:24:39 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 22:24:39 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 22:24:39 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 22:24:39 - PI_LLM - INFO - Embeddings model loaded from bge-m3
+2026-02-09 22:25:27 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-09 22:25:27 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-09 22:25:27 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-09 22:25:27 - PI_LLM - INFO - Embeddings model loaded from bge-m3
+2026-02-09 22:25:32 - PI_LLM - INFO - Embeddings: [[-0.04327482, 0.015608954, -0.0231684, 0.037955213, -0.039849453, -0.041996613, -0.003116379, -0.027557503, 0.03632923, 0.015639368, 0.0005978792, 0.011503113, -0.0096033355, 0.00094259245, 0.05600826, 0.019466575, 0.023213161, -0.037588708, -0.034853186, -0.048747554, -0.027158594, -0.008603505, 0.038003087, 0.039460324, -0.005469958, 0.050252166, -0.031004736, -0.029272718, 0.029108135, -0.010882489, 0.017691288, -0.006128375, -0.0089478865, -0.03367714, -0.02462398, -0.01021704, 0.02930105, 0.0037267609, -0.037731104, -0.0074327104, 0.0005937412, 0.0057133324, 0.04691808, -0.03266762, 0.02297661, 0.0026059065, -0.034586724, -0.018939162, -0.022806041, -0.0063772034, 0.052399263, 0.053302508, 0.052221447, -0.00016827376, -0.0091300085, 0.015148785, -0.04542437, -0.0072828783, -0.03581968, 0.003900252, -0.041932497, 0.05300743, 0.026493805, 0.008080984, -0.005622305, 0.13720275, -0.011635432, 0.026009127, -0.010462485, -0.034056496, -0.044943407, -0.0015070902, -0.027813407, -0.009684327, -0.081858814, 0.03322426, -0.00011377172, -0.04339356, -0.01683467, 0.03259233, 0.062344637, 0.0041836947, 0.01213338, 0.020785524, 0.0014196038, 0.013048246, -0.0052317563, 0.032723032, -0.011162948, -0.041903988, -0.047030035, -0.017903598, 0.01770961, -0.023169832, -0.040314607, 0.00051127945, -0.030301834, 0.009014224, 0.015243176, 0.044161573, 0.061517917, 0.04352527, -0.013721887, 0.0052611674, 0.02529031, -0.022472434, 0.018207792, 0.063055485, 0.038724493, -0.015401075, 0.059057735, 0.0060188347, 0.0706171, -0.002982091, 0.026242446, -0.02154618, -0.018671647, -0.03846333, 0.0016178028, -0.06277945, -0.0074017793, 0.021520317, 0.020709364, 0.009869848, 0.008674093, -0.018915327, 0.034226257, 0.05285632, -0.014637355, -0.001122015, 0.041667137, 0.017371168, -0.05404653, 0.004338959, -0.011148362, 0.012739866, 0.013621733, 0.0027859467, 0.008602943, -0.0112764165, 0.0044642137, 0.04795903, -0.040942162, -0.05788238, 0.0121561885, -0.058369134, 0.017527644, 0.022427123, 0.0027321137, 0.0055829785, -0.06108935, -0.011468, 0.038435735, 0.042402104, 0.02648311, -0.0037795072, -0.0046877917, 0.06646861, -0.02211035, 0.059459798, -0.0014522529, -0.02417489, -0.046385042, 0.043205403, 0.007773169, 0.02234049, 0.023363471, 0.04397726, 0.0046801795, -0.018707614, -0.015450256, 0.0039551854, 0.007995433, -0.013027047, -0.0033224241, 0.043020017, 0.06130497, 0.0083814915, -0.011288025, -0.016006175, -0.03508502, 0.015635515, -0.015158256, -0.05488703, -0.03840813, 0.005427537, -0.012106337, -0.0612582, 0.009975823, 0.0051821447, -0.0065558613, -0.02793257, 0.018981444, -0.004473398, 0.0044344496, -0.0070636454, -0.024098754, -0.020634793, -0.021791682, -0.027187048, -0.02457648, 0.020049747, 0.031073945, 0.020682646, -0.05074534, -0.021140179, -0.041478723, -0.0257044, 0.018871445, -0.015395623, 0.011734183, 0.02566537, 0.0021155507, -0.01644149, -0.036813132, 0.011386237, -0.008073888, 0.022942176, 0.0019586368, -0.042224195, -0.007941078, 0.018207356, -0.01705005, 0.048179526, 0.016864631, -0.002961873, 0.013268388, -0.0028656279, 0.05386122, 0.002196832, 0.03764122, -0.028907856, -0.014592172, -0.0077923522, 0.013489947, -0.026031677, -0.02105064, -0.0015701539, 0.028270904, 0.02108368, -0.017967831, -0.024293322, -0.010107316, 0.001542916, -0.03548106, 0.005644813, 0.022234343, -0.025041338, 0.020315908, 0.0406041, 0.023134675, -0.0071193394, -0.03240068, 0.008521861, 0.0073591606, 0.002369658, 0.0035959817, -9.459489e-05, -0.009736328, -0.02647418, 0.026446255, -0.03046147, 0.023522267, 0.0349504, 0.008650852, -0.019390026, -0.007102572, -0.00279654, 0.028179007, 0.04305713, -0.016395023, -0.04391731, 0.036832064, -0.01100366, -0.030604258, 0.028885314, -0.028195681, -0.05661066, 0.021111483, 0.0063357935, -0.0013820436, 0.00095188327, 0.014789635, -0.019743394, -0.014670141, 0.02397021, -0.038231507, -0.005403099, -0.0049966215, -0.013517529, 0.017220322, 0.021099534, 0.04278367, -0.008019388, -0.011478479, -0.005305832, -0.027559994, -0.14420609, 0.03561141, 0.011921543, -0.011485851, -0.0065810443, -0.0014457317, -0.008746699, 0.008271327, -0.024764853, 0.020020183, 0.016958097, -0.018266479, -0.039369024, 0.024869936, 0.0031272296, -0.00031131995, -0.012560861, -0.03698485, 0.0017200357, -0.026048545, -0.011441976, -0.04074554, 0.099020146, -0.058001146, 0.021167647, 0.0054020802, 0.025530193, -0.048591826, -0.07087552, -0.010713032, -0.020662181, -0.01788296, -0.013367304, 0.04387925, 0.016850019, 0.068832606, 0.029137677, -0.03088111, -0.018796513, -0.0058426745, 0.006462106, 0.03069041, -0.004640165, 0.052929286, -0.011045108, -0.043884918, -0.0112477215, -0.0073677893, 0.0021612023, -0.0106189, -0.018592706, -0.00076861633, -0.06186612, -0.04679631, -0.0102383755, -0.0068981852, -0.026275018, 0.012199136, -0.017022995, 0.0022481356, -0.0062201167, -0.04453273, 0.040940903, 0.010909996, -0.013293216, -0.005991399, 0.04771989, 0.0087314965, 0.025997637, -0.02607414, 0.019711372, -0.035571426, -0.029119775, -0.026176281, -0.015293927, 0.04431564, 0.009101687, -0.0345382, -0.000923443, -0.094707996, 0.0008857675, 0.028622197, 0.017629735, 0.005688481, -0.025628198, 0.0033514174, -0.02017984, 0.009682179, 0.09225959, 0.22985378, 0.025755098, -0.006785478, -0.036406204, 0.015006087, -0.031030048, 0.005281247, 0.02872433, -0.0024863484, -0.016856542, -0.012202917, -0.009752922, 0.01863392, 0.014856911, -0.016816491, 0.05514055, -0.06482761, -0.011601457, 0.06563357, -0.0118050305, 0.003517434, 0.011592619, 0.005089078, -0.040030763, -0.029265523, -0.03645599, -0.032854132, 0.061251283, 0.0020647536, 0.026700813, -0.027205389, 0.04115271, 0.02667451, -0.00080640725, 0.02396917, -0.007759741, 0.029918088, -0.065954275, 0.018440811, 0.06091277, -0.022420226, -0.021621313, 0.015724394, 0.011150515, -0.0017874748, 0.018209372, 0.020087633, -0.018327463, -0.05241666, -0.01564007, -0.0052914815, -0.011137516, -0.017477307, -0.0095622735, 0.016001733, -0.016630992, -0.00895634, -0.045900125, 0.008312963, 0.043032568, 0.01795978, 0.02555067, -0.03498013, -0.008850805, 0.022901187, 0.019198919, 0.020034116, -0.003676061, 0.028620811, -0.0011585571, 0.020982895, -0.0008514291, 0.013771142, 0.0054440326, 0.041227087, 0.0069259875, 0.019110782, 0.028377127, 0.013686622, 0.028706206, 0.018991295, 0.0027263332, -0.0023210968, -0.018692024, 0.0021002598, -0.056949604, 0.010135413, 0.03100559, 0.015763083, -0.0035823397, 0.039197598, 0.013359179, -0.053061925, -0.026145007, -0.02007266, -0.07694869, 0.041915096, 0.0016018696, -0.04176959, 0.02171845, -0.036332298, 0.004224092, -0.028661625, 0.045778126, -0.00565604, -0.027336642, -0.0044615744, 0.019715125, 0.00795669, 0.06476957, -0.03039494, 0.01640715, -0.002858454, -0.0088145295, 0.040905923, 0.022180572, 0.00026364715, 0.017063705, 0.0154715, 0.018759888, -0.015238847, -0.0077073895, -0.022249758, 0.05584048, -0.025794793, -0.0056270063, 0.033547167, -0.016277945, -0.014401864, 0.053925123, 0.009525523, -0.013837718, 0.029382512, 0.022034703, 0.085525915, 0.023458244, 0.053946473, 0.010634429, -0.0014846787, 0.06295776, 0.002721265, 0.011134296, -0.014390037, -0.0075640697, 0.003961447, 0.046630535, -0.014554025, -0.025425386, 0.008533542, 0.005105446, 0.024403304, 0.04142006, 0.03438214, -0.034347843, 0.0042343927, -0.048738454, -0.021011645, -0.055176016, 0.0074505503, -0.03421676, -0.011112641, 0.044878677, 0.063416846, 0.09976812, 0.011125818, 0.023190932, -0.023746375, 0.04844142, -0.044516277, -0.021524653, -0.013100927, -0.018748442, -0.038195454, -0.00401685, -0.030034801, -0.043498162, -0.04254847, 0.004178434, -0.018661667, -0.015482819, 0.043645658, -0.0122889085, -0.014390342, 0.0023727873, 0.050487254, -0.0064842547, 0.024349375, -0.009643955, -0.023419578, -0.016172115, -0.0063942107, 0.07901218, -0.013380644, -0.010882276, 0.05308788, -0.0052606585, 0.05538371, -0.0041732723, 0.00525607, -0.02885815, -0.006585621, 0.016953759, -0.020176131, -0.040512122, 0.0018635273, -0.013630637, -0.0009794896, 0.029525887, 0.0001583398, 0.0027747843, 0.007795703, -0.014152926, -0.01597745, -0.008838746, 0.0066767335, 0.012389102, 0.024001481, 0.05332344, -0.03316945, -0.0056607374, -0.013778058, -0.007937551, 0.0528696, -0.06845373, 0.009319623, 0.02344702, 0.028266905, -0.010360672, -0.007795519, 0.011525867, 0.00010272659, -0.044474285, -0.057112228, -0.03191666, 0.04945625, 0.012511212, -0.009264892, 0.046843264, -0.020595383, 0.020416446, -0.0037646056, -0.03227732, 0.025594411, 0.049568273, -0.002719619, 0.015484959, -0.027573237, -0.00885586, 0.026803866, 0.05099291, -0.022465527, 0.0028855982, 0.038275227, -0.056361962, -0.023558745, 0.038350053, 0.020399194, -0.009051313, -0.041425794, -0.009960202, -0.0018283465, 0.022138339, 0.0011527397, -0.023642492, -0.05313625, -0.027290985, 0.047984183, -0.028012613, -0.015692, -0.057495993, -0.007031354, 0.013347939, -0.010809772, -0.018660648, 0.04716937, 0.004008235, -0.0043867296, 0.022900874, 0.056706898, 0.015360954, -0.035079665, 0.028774036, -0.012644871, 0.024329219, -0.008930573, -0.02293834, 0.018181317, -0.0065067313, 0.03812571, -0.017240709, 0.016459873, -0.059850574, -0.0672174, 0.033144202, -0.0120310355, -0.010840101, -0.015362479, 0.04526908, 0.0004585031, -0.005836598, -0.019691043, 0.040220384, -0.03735573, -0.04504849, -0.04286644, 0.024730887, -0.0036189368, -0.061438013, 0.005124458, -0.014243458, 0.019182447, -0.035036355, -0.030189713, 0.009356067, 0.033410788, 0.0020628073, 0.05701417, -0.03444281, 0.01640303, 0.050759804, -0.012198681, 0.012400446, -0.018995436, 0.01396221, 0.01571282, -0.0016691551, 0.004552763, -0.004650517, -0.014176972, -0.018718217, -0.0010564403, 0.008364488, -0.0026140877, 0.0019425406, -0.0015429565, -0.037646767, 0.06662164, -0.024706962, 0.0016345155, -0.030143272, -0.011076245, 0.014986254, 0.016177552, -0.033335373, 0.021128953, -0.014585142, 0.0048834356, 0.012691614, 0.038382318, -0.005785751, 0.023343433, 0.021101775, -0.03313055, -0.050183456, 0.04357683, 0.009531069, -0.03095479, 0.0019196958, 0.02518366, 0.0021488385, -0.023599045, 0.014052312, -0.0021873817, 0.009376271, 0.03156307, 0.021936612, -0.014763414, -0.0031084905, 0.023362108, -0.036891606, -0.02294808, 0.033142246, 0.0010073633, -0.015662907, -0.06906171, 0.012387204, -0.033672217, -0.022503156, 0.03701616, -0.018949097, 0.01546787, -0.023252308, -0.011999839, -0.012273979, 0.008139484, -0.0058812667, -0.022722142, -0.0037337693, -0.0061784135, -0.016116425, -0.027994577, -0.04550426, -0.04023555, 0.027194778, -0.15211047, 0.015422957, -0.014620036, -0.01397309, -0.057250846, -0.0038438947, -0.016126482, -0.022549717, 0.017616421, -0.029060332, -0.008161331, 0.018982042, -0.03230523, -0.028183345, 0.024672667, 0.0010138145, -0.02313644, 0.004775274, 0.00150246, 0.020616746, 0.011213275, 0.008495765, 0.0374548, 0.042306934, 0.0026265443, -0.006325093, -0.014172047, 0.026658917, -0.05631762, -0.0305668, -0.00956196, -0.108158685, 0.009096734, 0.034838825, -0.004375196, -0.013911473, -0.0062654363, -0.029308278, -0.021646, -6.9533045e-05, -0.027502911, 0.03823018, -0.052576657, 0.020774286, -0.006418047, 0.03199468, -0.031692185, -0.0121668205, -0.03119534, -0.027042693, -0.0033868086, 0.00422022, -0.034801118, 0.04212016, -0.0047214758, -0.0072202473, -0.04131483, 0.02006359, 0.0058664205, 0.021709405, -0.009149034, -0.0234209, -0.034647223, -0.05718298, -0.09476196, 0.011467859, -0.05218635, 0.014879463, 0.026355524, 0.06848573, -0.0183725, -0.03388765, 0.051786743, -0.010218938, 0.02417109, 0.02660765, 0.013941828, -0.000988294, -0.03985921, -0.018865488, -0.012793128, 0.00821213, -0.04281134, -0.04434342, 0.04133018, 0.024370348, 0.0021883193, -0.022105277, -0.056832623, 0.0073207277, -0.0795277, -0.005664881, -0.017506288, -0.008466984, -0.041666087, 0.04124385, -0.03574656, -0.0013425841, -0.022801947, -0.0033443202, -0.033061214, -0.030584326, -0.037004836, -0.011853271, -0.007177562, -0.008775173, 0.014675975, -0.022581948, 0.045276992, -0.0117669925, -0.065040074, 0.0034263344, -0.015784519, 0.02544666, 0.018744571, -0.00523668, -0.008540976, 0.022033967, 0.021529885, 0.011175095, -0.060339123, -0.028329914, 0.024260094, -0.014868432, 0.022152571, 0.011639902, -0.016825821, 0.011424436, 0.044803523, 0.016004417, 0.024192328, -0.041342296, 0.005903408, 0.012555778, 0.03164426, 0.010565062, 0.001130019, 0.04437581, -0.028918196, -0.04025882, -0.0118013425, 0.012656627, -0.012959808, -0.03756004, -0.0065282527, 0.0058340263, -0.0034891728, -0.001150309, -0.047799997, -0.03276103, 0.02860728, -0.012754768, 0.03484842, 0.0025438156, -0.053241137, 0.0057498184, -0.012354521, 0.018993562, 0.059363466, 0.026348604, 0.024396816, -0.0065597445, -0.0060111494, -0.046851855, 0.00846746, 0.06589941, -0.014888597, 0.010117348, -0.046261363, 0.005038673, 0.0029371332, 0.0555079, -0.031472947, 0.0026063467, 0.051122583, -0.035235282, 0.0067150444, 0.006221383, 0.009137859, -0.018250952, 0.047745373, -0.0049877595, 0.04765064, 0.03332341, -0.03379894, 0.0034222598, -0.028082602, 0.013020792, 0.02709672, -0.015344894, 0.015323707, 0.015384828, 0.03457719, -0.026917063, 0.03973625, 0.07290358, 0.011032776, 0.025861047, -0.0041378904, 0.012703567, 0.0033879974, -0.038459867, 0.004233426, -0.067592725, -0.04736929, 0.041966032, -0.019318486, -0.007152142, -0.0046013063, 0.07351772, -0.009483367, -0.022958932, 0.0013264697, 0.018911488, -0.011152346, 0.032540705, -0.0013038975, 0.027536811, -0.00012347466, 0.004786686, -0.051992808, -0.0025478136, -0.017070318, -0.024518123, -0.022879079, 0.017166037, -0.032478, -0.0099418145, -0.00096847845, 0.008065419, 0.0021323483, 0.001307507, -0.037367593, 0.02280772, 0.014506199, -0.05287555, 0.069666244, 0.038141478, -0.018497359, -0.02166322, 0.007820722, -0.022604292, -0.008828534, -0.023271376]]
+2026-02-10 20:25:40 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-10 20:25:40 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-10 20:25:40 - PI_LLM - INFO - 📁 模型文件已存在: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 20:25:40 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 20:25:40 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-10 20:25:40 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 20:25:40 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 20:25:45 - PI_LLM - INFO - 🧪 开始LLM模型功能测试
+2026-02-10 20:25:56 - PI_LLM - INFO - 💬 模型回答: <think>
+好的，用户问“嗨！我是谁？”。首先，我需要回应他，但用户可能没有意识到，或者他们可能想确认身份。作为AI助手，我应该保持友好和专业的态度，同时避免提供任何个人信息。
+
+接下来，用户可能是在测试我的反应，或者想进一步了解自己。我应该用友好的方式回应，比如确认自己是AI助手，同时询问他们是否需要帮助。这样既保持了开放性，又不会让用户感到被怀疑。
+
+另外，需要注意用户的潜在需求。他们可能只是想知道自己是谁，或者想寻求帮助。因此，回应应该明确且简洁，同时保持耐心和理解。避免使用技术术语，让回答更自然。最后，确保整个对话流畅，让用户感到被重视。
+</think>
+
+你好！我是你的智能助手，可以帮你解答各种问题或提供帮助。如果需要，我随时在身边。有什么我可以帮你的吗？ 😊
+2026-02-10 20:25:56 - PI_LLM - INFO - ✅ LLM模型功能测试完成
+2026-02-10 21:12:41 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-10 21:12:41 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-10 21:12:41 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-10 21:18:44 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-10 21:18:44 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-10 21:18:44 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-10 21:18:44 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-10 21:20:30 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-10 21:20:30 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-10 21:20:30 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-10 21:20:30 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-10 21:26:05 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-10 21:26:05 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-10 21:26:05 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-10 21:26:05 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-10 21:27:58 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-10 21:27:58 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-10 21:27:58 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-10 21:27:58 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-10 21:34:02 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-10 21:34:02 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-10 21:34:02 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-10 21:34:02 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 21:34:02 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-10 21:34:02 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 21:34:02 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 21:42:20 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-10 21:42:20 - PI_LLM - INFO - 📥 开始下载模型: Qwen/Qwen3-Embedding-0.6B 到 /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms
+2026-02-10 21:43:04 - PI_LLM - INFO - ✅ 模型下载完成，保存位置: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-Embedding-0___6B
+2026-02-10 21:44:53 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-10 21:44:53 - PI_LLM - INFO - 📦 加载嵌入模型: Qwen/Qwen3-Embedding-0.6B
+2026-02-10 21:44:53 - PI_LLM - ERROR - 嵌入模型加载失败: Qwen/Qwen3-Embedding-0.6B - 错误: name 'SentenceTransformer' is not defined
+2026-02-10 21:47:44 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-10 21:47:44 - PI_LLM - INFO - 📦 加载嵌入模型: Qwen/Qwen3-Embedding-0.6B
+2026-02-10 21:52:03 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-10 21:52:03 - PI_LLM - INFO - 📦 加载嵌入模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-Embedding-0.6B
+2026-02-10 21:52:03 - PI_LLM - ERROR - 嵌入模型加载失败: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-Embedding-0.6B - 错误: HuggingFaceEmbeddings.__init__() takes 1 positional argument but 2 were given
+2026-02-10 21:53:29 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-10 21:53:29 - PI_LLM - INFO - 📦 加载嵌入模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-Embedding-0.6B
+2026-02-10 21:53:32 - PI_LLM - INFO - ✅ 嵌入模型加载成功: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-Embedding-0.6B
+2026-02-10 21:53:32 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 21:53:32 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-10 21:53:32 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 21:53:32 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 22:33:36 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-10 22:33:36 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-10 22:33:36 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-10 22:33:36 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 22:33:36 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-10 22:33:36 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 22:33:37 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 23:44:00 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-10 23:44:00 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-10 23:44:00 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-10 23:44:00 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 23:44:00 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-10 23:44:00 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 23:44:00 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 23:44:32 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-10 23:44:32 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-10 23:44:32 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-10 23:44:32 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 23:44:32 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-10 23:44:32 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 23:44:33 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 23:52:58 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-10 23:52:58 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-10 23:52:58 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-10 23:52:58 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 23:52:58 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-10 23:52:58 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-10 23:52:58 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 00:36:23 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 00:36:23 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 00:36:23 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 00:36:23 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 00:41:59 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 00:41:59 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 00:41:59 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 00:41:59 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 10:08:00 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 10:08:00 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 10:08:00 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 10:08:00 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 10:11:39 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 10:11:39 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 10:11:39 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 10:11:39 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 15:57:38 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 15:57:38 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 15:57:38 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 15:57:38 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 16:03:34 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 16:03:34 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 16:03:34 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 16:03:34 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 16:16:39 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 16:16:39 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 16:16:40 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 16:16:40 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 16:18:44 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 16:18:44 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 16:18:44 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 16:18:44 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 16:26:14 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 16:26:14 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 16:26:14 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 16:26:14 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 16:39:05 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 16:39:05 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 16:39:05 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 16:39:05 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 16:39:52 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 16:39:52 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 16:39:52 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 16:39:52 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 16:40:32 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 16:40:32 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 16:40:32 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 16:40:32 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 16:42:14 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 16:42:14 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 16:42:15 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 16:42:15 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 17:05:46 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:05:46 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 17:05:46 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 17:05:46 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 17:06:27 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:06:27 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 17:06:27 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 17:06:27 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 17:07:05 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:07:05 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 17:07:05 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 17:07:05 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 17:07:53 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:07:53 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 17:07:53 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 17:07:53 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 17:08:27 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:08:27 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 17:08:27 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 17:08:27 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 17:10:19 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:10:19 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 17:10:19 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 17:10:19 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 17:16:12 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:16:12 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 17:16:12 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 17:16:12 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 17:21:29 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:22:35 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:23:03 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:23:22 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:23:22 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 17:23:22 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 17:23:22 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 17:28:23 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:28:23 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 17:28:23 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 17:28:23 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 17:29:45 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:29:45 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 17:29:45 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 17:29:45 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 17:32:02 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:32:02 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 17:32:02 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 17:32:02 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 17:32:18 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:32:18 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 17:32:18 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 17:32:18 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 17:32:18 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-11 17:32:18 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 17:32:19 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 17:33:55 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:33:55 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 17:33:55 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 17:33:55 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 17:33:55 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-11 17:33:55 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 17:33:56 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 17:34:57 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:34:57 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 17:34:57 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 17:34:57 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 17:34:57 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-11 17:34:57 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 17:34:57 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 17:39:09 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:39:09 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 17:39:09 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 17:39:09 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 17:39:09 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-11 17:39:09 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 17:39:10 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 17:39:58 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 17:39:58 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 17:39:58 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 17:39:58 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 17:39:58 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-11 17:39:58 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 17:39:58 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 20:44:48 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 20:44:48 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 20:44:48 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 20:44:48 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 20:44:48 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-11 20:44:48 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 20:44:49 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 20:51:00 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 20:51:00 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 20:51:00 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 20:51:00 - PI_LLM - INFO - ✅ llm 模型加载成功: qwen3:8b
+2026-02-11 20:51:24 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 20:51:24 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 20:51:24 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 20:51:24 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 20:51:24 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-11 20:51:24 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 20:51:24 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 20:52:48 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 20:52:48 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 20:52:48 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 20:53:29 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 20:53:29 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 20:53:29 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 21:10:49 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 21:10:49 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 21:10:49 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 21:10:49 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 21:10:49 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-11 21:10:49 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 21:10:49 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 21:11:35 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 21:11:35 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 21:11:35 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
+2026-02-11 21:11:35 - PI_LLM - INFO - 🚀 开始加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 21:11:35 - PI_LLM - INFO - 🖥️ 检测到设备: mps, 数据类型: torch.float16
+2026-02-11 21:11:35 - PI_LLM - INFO - 🔤 加载分词器: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 21:11:36 - PI_LLM - INFO - 🤖 加载模型: /Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms/Qwen/Qwen3-0.6B
+2026-02-11 21:32:11 - PI_LLM - INFO - 📝 日志文件已启用: ./log/ahum.log
+2026-02-11 21:32:11 - PI_LLM - INFO - 📦 加载嵌入模型: bge-m3
+2026-02-11 21:32:11 - PI_LLM - INFO - ✅ 嵌入模型加载成功: bge-m3
