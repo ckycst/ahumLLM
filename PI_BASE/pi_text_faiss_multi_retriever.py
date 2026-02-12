@@ -403,7 +403,7 @@ def main_test(knowledgeBase, llm, embeddings):
     # 处理每个查询
     for query in queries:
         print("\n" + "="*50)
-        print(f"查询: {query}")
+        print(f"正在查询: {query}")
         
         # 使用MultiQueryRetriever处理查询
         response, unique_pages = process_query_with_multi_retriever(
@@ -435,6 +435,30 @@ def main_test(knowledgeBase, llm, embeddings):
         print("="*50)
         print("\n" + "="*50)
         print(f"查询: {query}")
+        
+        # 使用MultiQueryRetriever处理查询
+        response, unique_pages = process_query_with_multi_retriever(
+            query, 
+            multi_retriever, 
+            llm
+        )
+        
+        # 修复响应处理
+        if isinstance(response, dict):
+            # 如果是字典格式
+            print(response["output_text"])
+        elif isinstance(response, str):
+            # 如果是字符串格式
+            print(response)
+        else:
+            # 其他情况
+            print(str(response))
+        
+        # 打印来源页码
+        print("\n来源页码:")
+        for page in sorted(unique_pages):
+            print(f"- 第 {page} 页")
+        print("="*50)
 
 DASHSCOPE_API_KEY = os.getenv('DASHSCOPE_API_KEY')
 if not DASHSCOPE_API_KEY:
