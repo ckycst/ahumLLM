@@ -14,8 +14,7 @@ Process:
 from pypdf import PdfReader
 # from langchain.chains.question_answering import load_qa_chain
 from langchain_community.callbacks.manager import get_openai_callback
-# from langchain_community.text_splitter import RecursiveCharacterTextSplitter
-# from langchain_core.text_splitter import RecursiveCharacterTextSplitter
+from langchain_classic.retrievers.multi_query import MultiQueryRetriever
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import DashScopeEmbeddings
 from langchain_community.vectorstores import FAISS
@@ -307,6 +306,135 @@ def run_rag_with_langchain(query, knowledgeBase, llm):
             unique_pages.add(source_page)
             print(f"文本块页码: {source_page}")
 
+# 创建MultiQueryRetriever
+def create_multi_query_retriever(vectorstore, llm):
+    """
+    创建MultiQueryRetriever
+    
+    参数:
+        vectorstore: 向量数据库
+        llm: 大语言模型，用于查询改写
+    
+    返回:
+        retriever: MultiQueryRetriever对象
+    """
+    # 创建基础检索器：这个基础检索器是由向量数据库转化成的。
+    base_retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
+    
+    # 创建MultiQueryRetriever
+    retriever = MultiQueryRetriever.from_llm(
+        retriever=base_retriever,
+        llm=llm
+    )
+    
+    return retriever
+
+# 使用MultiQueryRetriever处理查询
+def process_query_with_multi_retriever(query: str, retriever, llm):
+    """
+    使用MultiQueryRetriever处理查询
+    
+    参数:
+        query: 用户查询
+        retriever: MultiQueryRetriever对象
+        llm: 大语言模型
+    
+    返回:
+        response: 回答
+        unique_pages: 相关文档的页码集合
+    """
+    # 执行查询，获取相关文档
+    docs = retriever.invoke(query)
+    print(f"找到 {len(docs)} 个相关文档")
+    
+    # 加载问答链
+    # chain = load_qa_chain(llm, chain_type="stuff")
+
+    prompt = PromptTemplate.from_template(
+        "使用以下上下文回答问题：\n\n{context}\n\n问题：{question}\n答案："
+    )
+
+    rag_chain = (
+        {"context": lambda x: "\n\n".join([doc.page_content for doc in x["input_documents"]]), "question": RunnablePassthrough()}
+        | prompt
+        | llm
+        | StrOutputParser()
+    )
+    
+    # 准备输入数据
+    input_data = {"input_documents": docs, "question": query}
+    
+    # 使用回调函数跟踪API调用成本
+    with get_openai_callback() as cost:
+        # 执行问答链
+        response = rag_chain.invoke(input=input_data)
+        print(f"查询已处理。成本: {cost}")
+    
+    # 记录唯一的页码
+    unique_pages = set()
+    
+    # 获取每个文档块的来源页码
+    for doc in docs:
+        text_content = getattr(doc, "page_content", "")
+        # 获取向量存储中的页码信息
+        source_page = retriever.retriever.vectorstore.page_info.get(
+            text_content.strip(), "未知"
+        )
+        
+        if source_page not in unique_pages:
+            unique_pages.add(source_page)
+    
+    return response, unique_pages
+
+def main_test(knowledgeBase, llm, embeddings):
+    """测试主函数"""
+    print("正在测试MultiQueryRetriever...")
+    knowledgeBase = load_knowledge_base("./vector_db", embeddings = embeddings)
+    # 创建MultiQueryRetriever
+    multi_retriever = create_multi_query_retriever(knowledgeBase, llm)
+
+    # 设置查询问题
+    queries = [
+        "客户经理被投诉了，投诉一次扣多少分",
+        "客户经理每年评聘申报时间是怎样的？",
+        "客户经理的考核标准是什么？"
+    ]
+
+    # 处理每个查询
+    for query in queries:
+        print("\n" + "="*50)
+        print(f"查询: {query}")
+        
+        # 使用MultiQueryRetriever处理查询
+        response, unique_pages = process_query_with_multi_retriever(
+            query, 
+            multi_retriever, 
+            llm
+        )
+
+        # 添加调试信息
+        print(f"Response type: {type(response)}")
+        print(f"Unique pages type: {type(unique_pages)}")
+        
+        # 打印回答
+        # print("\n回答:")
+        # print(response["output_text"])
+
+        # 安全地处理响应
+        if isinstance(response, dict) and "output_text" in response:
+            print(response["output_text"])
+        elif isinstance(response, str):
+            print(response)
+        else:
+            print(f"Unexpected response format: {response}")
+        
+        # 打印来源页码
+        print("\n来源页码:")
+        for page in sorted(unique_pages):
+            print(f"- 第 {page} 页")
+        print("="*50)
+        print("\n" + "="*50)
+        print(f"查询: {query}")
 
 DASHSCOPE_API_KEY = os.getenv('DASHSCOPE_API_KEY')
 if not DASHSCOPE_API_KEY:
@@ -329,7 +457,6 @@ cLLM.load_embeddings_model(ollama_EMBEDDING_MODEL, isLocal=False)
 embeddings = cLLM.embeddings
 llm_model = Tongyi(model_name="deepseek-v3", dashscope_api_key=DASHSCOPE_API_KEY) # qwen-turbo
 
-
 # 处理文本并创建知识库，同时保存到磁盘
 save_dir = "./vector_db"
 # 定义向量数据库文件保存路径
@@ -347,9 +474,12 @@ else:
     print(f"提取的文本长度: {len(text)} 个字符。")
     knowledgeBase = process_text_with_splitter(text, page_numbers, save_path = save_dir, embeddings = embeddings)
 
+main_test(knowledgeBase, llm_model, embeddings)
+
+
 # 设置查询问题
 # query = "客户经理被投诉了，投诉一次扣多少分"
-query = "客户经理每年评聘申报时间是怎样的？"
+# query = "客户经理每年评聘申报时间是怎样的？"
 
 # use local llm to run rag
 '''if query:
@@ -368,4 +498,4 @@ query = "客户经理每年评聘申报时间是怎样的？"
         print(source)'''
 
 # use remote llm and  langchain to  run rag
-run_rag_with_langchain(query, knowledgeBase, llm_model)
+'''run_rag_with_langchain(query, knowledgeBase, llm_model)'''
