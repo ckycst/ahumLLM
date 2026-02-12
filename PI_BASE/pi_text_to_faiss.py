@@ -32,10 +32,6 @@ import pickle
 import inspect
 from langchain_community.llms import Tongyi
 
-DASHSCOPE_API_KEY = os.getenv('DASHSCOPE_API_KEY')
-if not DASHSCOPE_API_KEY:
-    raise ValueError("请设置环境变量 DASHSCOPE_API_KEY")
-
 def extract_text_with_page_numbers(pdf) -> Tuple[str, List[int]]:
     """
     从PDF中提取文本并记录每行文本对应的页码
@@ -188,11 +184,14 @@ def load_knowledge_base(load_path: str, embeddings = None) -> FAISS:
 # 使用本地LLM运行RAG链
 def run_rag_with_local_llm(query, knowledgeBase, tokenizer, model):
     """使用本地LLM运行RAG链"""
-    # 1. 相似度搜索
+    # 1. 相似度搜索,返回相关性最强的3个doc
     docs = knowledgeBase.similarity_search(query, k=3)
     
     # 2. 构造对话消息
+    # 将docs 转换为字符串，用\n\n分隔
     context = "\n\n".join([doc.page_content for doc in docs])
+    # 创建对话消息列表,这个是最终要塞给LLM的，如果是本地的llm, 下一步需要进行tokenizer处理
+    # messages 推给run_local_llm 进行tokenizer处理：tokenizer.apply_chat_template()
     messages = [
         {"role": "user", "content": f"使用以下上下文回答问题：\n\n{context}\n\n问题：{query}\n答案："}
     ]
@@ -210,6 +209,7 @@ def run_rag_with_local_llm(query, knowledgeBase, tokenizer, model):
             unique_pages.add(source_page)
             sources.append(f"文本块页码: {source_page}")
     
+    # response 来自3，sources 来自4
     return response, sources
 
 def run_rag_with_ollama(query, knowledgeBase, llm):
@@ -299,9 +299,14 @@ def run_rag_with_langchain(query, knowledgeBase, llm):
             unique_pages.add(source_page)
             print(f"文本块页码: {source_page}")
 
+
+DASHSCOPE_API_KEY = os.getenv('DASHSCOPE_API_KEY')
+if not DASHSCOPE_API_KEY:
+    raise ValueError("请设置环境变量 DASHSCOPE_API_KEY")
+
 ## 导入 pi_down_load_models 中的 PI_LLM，维护一个class, 包含了 llm 和embedding 模型
 ollama_EMBEDDING_MODEL = "bge-m3"
-ollama_LLM_MODEL = "qwen3:8b"
+ollama_LLM_MODEL = "qwen3:1.7b"
 
 MODEL_DIR = "/Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms"
 LLM_MODEL_LOCAL_TAG = "Qwen/Qwen3-0.6B"
@@ -310,24 +315,29 @@ EMBEDDING_MODEL_LOCAL_TAG = "Qwen/Qwen3-Embedding-0.6B"
 cLLM = PiLLM()
 cLLM.load_embeddings_model(ollama_EMBEDDING_MODEL, isLocal=False)
 # cLLM.load_llm_model(os.path.join(MODEL_DIR, LLM_MODEL_LOCAL_TAG), isLocal = True)
-cLLM.load_llm_model(ollama_LLM_MODEL, isLocal=False)
+# cLLM.load_llm_model(ollama_LLM_MODEL, isLocal = False)
 
-llm_model = cLLM.llm_model
+# llm_model = cLLM.llm_model
 embeddings = cLLM.embeddings
-# llm = Tongyi(model_name="deepseek-v3", dashscope_api_key=DASHSCOPE_API_KEY) # qwen-turbo
-
-# 读取PDF文件
-pdf_reader = PdfReader('./浦发上海浦东发展银行西安分行个金客户经理考核办法.pdf')
-# 提取文本和页码信息
-text, page_numbers = extract_text_with_page_numbers(pdf_reader)
-text
+llm_model = Tongyi(model_name="deepseek-v3", dashscope_api_key=DASHSCOPE_API_KEY) # qwen-turbo
 
 
-print(f"提取的文本长度: {len(text)} 个字符。")
-    
 # 处理文本并创建知识库，同时保存到磁盘
 save_dir = "./vector_db"
-knowledgeBase = process_text_with_splitter(text, page_numbers, save_path = save_dir, embeddings = embeddings)
+# 定义向量数据库文件保存路径
+faiss_index_file = os.path.join(save_dir, "index.faiss")
+
+if os.path.exists(faiss_index_file):
+    print("✅ 检测到现有向量数据库，正在加载...")
+    knowledgeBase = load_knowledge_base(save_dir, embeddings = embeddings)
+else:
+    log_info("没有检测到现有向量数据库，正在创建...")
+    # 读取PDF文件
+    pdf_reader = PdfReader('./浦发上海浦东发展银行西安分行个金客户经理考核办法.pdf')
+    # 提取文本和页码信息
+    text, page_numbers = extract_text_with_page_numbers(pdf_reader)
+    print(f"提取的文本长度: {len(text)} 个字符。")
+    knowledgeBase = process_text_with_splitter(text, page_numbers, save_path = save_dir, embeddings = embeddings)
 
 # 设置查询问题
 # query = "客户经理被投诉了，投诉一次扣多少分"
@@ -335,19 +345,19 @@ query = "客户经理每年评聘申报时间是怎样的？"
 
 # use local llm to run rag
 '''if query:
-    response, sources = run_rag_with_local_llm(query, knowledgeBase, tokenizer = cLLM.tokenizer, model = llm)
+    response, sources = run_rag_with_local_llm(query, knowledgeBase, tokenizer = cLLM.tokenizer, model = llm_model)
     print(f"回答: {response}")
     print("来源:")
     for source in sources:
         print(source)'''
 
 # use ollama llm to run rag
-if query:
+'''if query:
     response, sources = run_rag_with_ollama(query, knowledgeBase, llm = llm_model)
     print(f"回答: {response}")
     print("来源:")
     for source in sources:
-        print(source)
+        print(source)'''
 
 # use remote llm and  langchain to  run rag
-'''run_rag_with_langchain(query, knowledgeBase, llm)'''
+run_rag_with_langchain(query, knowledgeBase, llm_model)

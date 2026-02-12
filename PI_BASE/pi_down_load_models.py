@@ -217,6 +217,7 @@ def run_local_llm(tokenizer, model, messages):
     response = tokenizer.decode(generated_ids[0], skip_special_tokens=True)
     log_info(f"💬 模型回答: {response.strip()}", logger)
     log_info("✅ LLM模型功能测试完成", logger)
+    return response
 
 def run_ollama_llm(ollama_llm, prompt):
     """测试 Ollama LLM 模型功能"""
