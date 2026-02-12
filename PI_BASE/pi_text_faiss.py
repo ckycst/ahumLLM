@@ -51,7 +51,8 @@ def extract_text_with_page_numbers(pdf) -> Tuple[str, List[int]]:
         if extracted_text:  
             text += extracted_text
             page_numbers.extend([page_number] * len(extracted_text.split("\n")))
-
+    log.info("PDF文件提取为文本并记录每行文本对应的页码完成")
+    
     return text, page_numbers
 
 ## extract_text_with_page_numbers 将PDF文件提取为文本并记录每行文本对应的页码，每一页的文本与page 对应上了
