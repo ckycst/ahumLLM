@@ -1,8 +1,8 @@
 # pi_text_to_faiss.py
 """
 pi_text_to_faiss.py
-Convert PDF to FAISS vector database
-This script converts a PDF file into a FAISS vector database.
+Convert PDF、txt、word、excel to FAISS vector database
+This script converts a PDF、txt、word、excel file into a FAISS vector database
 Usage:
     python pi_text_to_faiss.py
 Process:
