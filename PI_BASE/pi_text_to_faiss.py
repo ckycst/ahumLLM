@@ -20,7 +20,11 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import DashScopeEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_ollama import OllamaEmbeddings
-from pi_down_load_models import PiLLM
+from langchain_core.prompts import PromptTemplate
+from langchain_core.runnables import RunnablePassthrough
+from langchain_core.output_parsers import StrOutputParser
+
+from pi_down_load_models import PiLLM, run_local_llm
 from typing import List, Tuple
 from pi_log import *
 import os
@@ -181,78 +185,74 @@ def load_knowledge_base(load_path: str, embeddings = None) -> FAISS:
     
     return knowledgeBase
 
-
-## 导入 pi_down_load_models 中的 PI_LLM，维护一个class, 包含了 llm 和embedding 模型
-ollama_EMBEDDING_MODEL = "bge-m3"
-ollama_LLM_MODEL = "qwen3:8b"
-
-MODEL_DIR = "/Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms"
-LLM_MODEL_LOCAL_TAG = "Qwen/Qwen3-0.6B"
-EMBEDDING_MODEL_LOCAL_TAG = "Qwen/Qwen3-Embedding-0.6B"
-
-cLLM = PiLLM()
-cLLM.load_embeddings_model(ollama_EMBEDDING_MODEL, isLocal=False)
-# cLLM.load_llm_model(os.path.join(MODEL_DIR, LLM_MODEL_LOCAL_TAG), isLocal = True)
-# cLLM.load_llm_model(ollama_LLM_MODEL, isLocal=False)
-
-# llm = cLLM.llm_model
-embeddings = cLLM.embeddings
-llm = Tongyi(model_name="deepseek-v3", dashscope_api_key=DASHSCOPE_API_KEY) # qwen-turbo
-
-# 读取PDF文件
-pdf_reader = PdfReader('./浦发上海浦东发展银行西安分行个金客户经理考核办法.pdf')
-# 提取文本和页码信息
-text, page_numbers = extract_text_with_page_numbers(pdf_reader)
-text
-
-
-print(f"提取的文本长度: {len(text)} 个字符。")
+# 使用本地LLM运行RAG链
+def run_rag_with_local_llm(query, knowledgeBase, tokenizer, model):
+    """使用本地LLM运行RAG链"""
+    # 1. 相似度搜索
+    docs = knowledgeBase.similarity_search(query, k=3)
     
-# 处理文本并创建知识库，同时保存到磁盘
-save_dir = "./vector_db"
-knowledgeBase = process_text_with_splitter(text, page_numbers, save_path=save_dir, embeddings = embeddings)
+    # 2. 构造对话消息
+    context = "\n\n".join([doc.page_content for doc in docs])
+    messages = [
+        {"role": "user", "content": f"使用以下上下文回答问题：\n\n{context}\n\n问题：{query}\n答案："}
+    ]
+    
+    # 3. 使用本地LLM生成回答
+    response = run_local_llm(tokenizer, model, messages)
+    
+    # 4. 返回结果和来源信息
+    sources = []
+    unique_pages = set()
+    for doc in docs:
+        text_content = getattr(doc, "page_content", "")
+        source_page = knowledgeBase.page_info.get(text_content.strip(), "未知")
+        if source_page not in unique_pages:
+            unique_pages.add(source_page)
+            sources.append(f"文本块页码: {source_page}")
+    
+    return response, sources
 
-# 示例：如何加载已保存的向量数据库
-# 注释掉以下代码以避免在当前运行中重复加载
-"""
-# 创建嵌入模型
-embeddings = DashScopeEmbeddings(
-    model="text-embedding-v1",
-    dashscope_api_key=DASHSCOPE_API_KEY,
-)
-# 从磁盘加载向量数据库
-loaded_knowledgeBase = load_knowledge_base("./vector_db", embeddings)
-# 使用加载的知识库进行查询
-docs = loaded_knowledgeBase.similarity_search("客户经理每年评聘申报时间是怎样的？")
+def run_rag_with_ollama(query, knowledgeBase, llm):
+    """使用 Ollama 模型运行 RAG 链"""
+    # 1. 相似度搜索
+    docs = knowledgeBase.similarity_search(query, k=3)
+    
+    # 2. 构造提示词（不需要 tokenizer）
+    context = "\n\n".join([doc.page_content for doc in docs])
+    prompt = f"使用以下上下文回答问题：\n\n{context}\n\n问题：{query}\n答案："
+    
+    # 3. 使用 Ollama 模型生成回答
+    response = llm.invoke(prompt)
+    
+    # 4. 返回结果和来源信息
+    sources = []
+    unique_pages = set()
+    for doc in docs:
+        text_content = getattr(doc, "page_content", "")
+        source_page = knowledgeBase.page_info.get(text_content.strip(), "未知")
+        if source_page not in unique_pages:
+            unique_pages.add(source_page)
+            sources.append(f"文本块页码: {source_page}")
+    
+    return response, sources
 
-# 直接使用FAISS.load_local方法加载（替代方法）
-# loaded_knowledgeBase = FAISS.load_local("./vector_db", embeddings, allow_dangerous_deserialization=True)
-# 注意：使用这种方法加载时，需要手动加载页码信息
-"""
-
-from langchain_core.prompts import PromptTemplate
-from langchain_core.runnables import RunnablePassthrough
-from langchain_core.output_parsers import StrOutputParser
-
-# 定义 prompt 模板（可选，也可以用默认）
-prompt = PromptTemplate.from_template(
-    "使用以下上下文回答问题：\n\n{context}\n\n问题：{question}\n答案："
-)
+def run_rag_with_langchain(query, knowledgeBase, llm):
+    # 定义 prompt 模板（可选，也可以用默认）
+    prompt = PromptTemplate.from_template(
+        "使用以下上下文回答问题：\n\n{context}\n\n问题：{question}\n答案："
+    )
 
 # 设置查询问题
 # query = "客户经理被投诉了，投诉一次扣多少分"
-query = "客户经理每年评聘申报时间是怎样的？"
+# query = "客户经理每年评聘申报时间是怎样的？"
 
-if query:
+# if query:
     #（1）这是第一步，找到相关的文档块，返回最关联的2个文档块
     # 执行相似度搜索，找到与查询相关的文档
     # query: 用户的查询问题
     # k=2: 指定返回前2个最相关的文档块
     # docs: 返回值为包含2个document 对象的列表
     docs = knowledgeBase.similarity_search(query,k = 3)
-
-    '''# 加载问答链,load_qa_chain 是以前的版本了
-    # chain = load_qa_chain(llm, chain_type="stuff")'''
 
     #（2）这是第二步，构建问答链，将文档块和问题一起传递给LLM
     # 构建 chain
@@ -298,3 +298,56 @@ if query:
         if source_page not in unique_pages:
             unique_pages.add(source_page)
             print(f"文本块页码: {source_page}")
+
+## 导入 pi_down_load_models 中的 PI_LLM，维护一个class, 包含了 llm 和embedding 模型
+ollama_EMBEDDING_MODEL = "bge-m3"
+ollama_LLM_MODEL = "qwen3:8b"
+
+MODEL_DIR = "/Users/carlos/Desktop/PileGo.Ai/ahum_llm/llms"
+LLM_MODEL_LOCAL_TAG = "Qwen/Qwen3-0.6B"
+EMBEDDING_MODEL_LOCAL_TAG = "Qwen/Qwen3-Embedding-0.6B"
+
+cLLM = PiLLM()
+cLLM.load_embeddings_model(ollama_EMBEDDING_MODEL, isLocal=False)
+# cLLM.load_llm_model(os.path.join(MODEL_DIR, LLM_MODEL_LOCAL_TAG), isLocal = True)
+cLLM.load_llm_model(ollama_LLM_MODEL, isLocal=False)
+
+llm_model = cLLM.llm_model
+embeddings = cLLM.embeddings
+# llm = Tongyi(model_name="deepseek-v3", dashscope_api_key=DASHSCOPE_API_KEY) # qwen-turbo
+
+# 读取PDF文件
+pdf_reader = PdfReader('./浦发上海浦东发展银行西安分行个金客户经理考核办法.pdf')
+# 提取文本和页码信息
+text, page_numbers = extract_text_with_page_numbers(pdf_reader)
+text
+
+
+print(f"提取的文本长度: {len(text)} 个字符。")
+    
+# 处理文本并创建知识库，同时保存到磁盘
+save_dir = "./vector_db"
+knowledgeBase = process_text_with_splitter(text, page_numbers, save_path = save_dir, embeddings = embeddings)
+
+# 设置查询问题
+# query = "客户经理被投诉了，投诉一次扣多少分"
+query = "客户经理每年评聘申报时间是怎样的？"
+
+# use local llm to run rag
+'''if query:
+    response, sources = run_rag_with_local_llm(query, knowledgeBase, tokenizer = cLLM.tokenizer, model = llm)
+    print(f"回答: {response}")
+    print("来源:")
+    for source in sources:
+        print(source)'''
+
+# use ollama llm to run rag
+if query:
+    response, sources = run_rag_with_ollama(query, knowledgeBase, llm = llm_model)
+    print(f"回答: {response}")
+    print("来源:")
+    for source in sources:
+        print(source)
+
+# use remote llm and  langchain to  run rag
+'''run_rag_with_langchain(query, knowledgeBase, llm)'''

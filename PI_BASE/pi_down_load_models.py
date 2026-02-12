@@ -31,9 +31,8 @@ class PiLLM:
     def load_llm_model(self, model_id, isLocal = False):
         if isLocal:
             self.tokenizer, self.llm_model = load_llm_from_local(model_id)
-            # self.llm = local_LLM_With_HuggingFacePipeLine(self.tokenizer, self.llm_model)
         else:
-            self.llm = load_llm_from_ollama(model_id)
+            self.llm_model = load_llm_from_ollama(model_id)
 
     def load_embeddings_model(self, model_id, isLocal = False):
         if isLocal:
@@ -193,12 +192,12 @@ def run_local_llm(tokenizer, model, messages):
     # 使用 tokenizer.apply_chat_template()，控制输入格式，确保符合官方规范
     text = tokenizer.apply_chat_template(
         messages,
-        tokenize=False,
-        add_generation_prompt=True  # 添加 <|im_start|>assistant 标记
+        tokenize = False,
+        add_generation_prompt = True  # 添加 <|im_start|>assistant 标记
     )
 
     # 编码为 input_ids
-    model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
+    model_inputs = tokenizer([text], return_tensors = "pt").to(model.device)
 
     # 生成回复
     generated_ids = model.generate(
@@ -242,23 +241,6 @@ def run_ollama_llm(ollama_llm, prompt):
     except Exception as e:
         log_error(f"Ollama 测试失败: {str(e)}", logger)
         raise
-
-def local_LLM_With_HuggingFacePipeLine(tokenizer, model):
-    """Load local LLM with Hugging Face Pipeline"""
-    pipe = pipeline(
-        "text-generation",
-        model = model,
-        tokenizer = tokenizer,
-        max_new_tokens = 512,
-        temperature = 0.1,
-        do_sample = False,
-        repetition_penalty = 1.1
-    )
-
-    llm = HuggingFacePipeline(pipeline = pipe)
-
-    return llm
-
 
 if __name__ == "__main__":
     MODEL_REPO = 2 # 1 for huggingface_hub, 2 for modelscope repo
